@@ -1,0 +1,176 @@
+*{margin: 0;padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Courgette&family=Kaushan+Script&family=Knewave&family=Titan+One&display=swap');
+@font-face {
+    font-family: 'caveat';
+    src: url(font/CaveatBrush-Regular.ttf) format('truetype');
+}
+body{
+    background-image: url(photo/back1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bodying{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sign{
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#or p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#tree{
+    width: 40vw;
+    height: 100%;
+    margin-top: 80px;
+}
+#here{
+    color: blue;
+}
+form a{color: white;}
+form a:hover{
+    color: blue;
+    -webkit-text-stroke: 0 ;
+}
+button{
+    width: 10vw;
+    border-radius: 20px;
+    padding-block: 8px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: caveat;
+    color: white;
+    background-color: rgb(235,5,19);
+    border: none;
+    box-shadow: 0 0 10px rgb(46, 46, 131);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text label{
+    margin-top: 10px;
+}
+#logo{
+    width: 13vw;
+    border-radius: 50%;
+    margin: 20px 20px 0 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+h1{
+    color:white;
+    font-family: 'Boogaloo';
+    text-shadow: 0 0 0px white;
+    font-size: 2.5em;
+    margin-top: 30px;
+    }
+hr{
+    width: 20vw;
+    height: 2px;
+    background: #000;
+    border: none;
+    
+}
+#sign,form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sign img{
+    width: 40px;
+}
+#other{
+    display: flex;
+    flex-direction: column;
+}
+#other div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    margin-block: 10px;
+    width: 25vw;
+    padding-block: 2px;
+}
+#sign div{
+    display: flex;
+    align-items: center;
+}
+#new, #term{
+    margin: 0;padding: 0;
+}
+form label{
+    font-family: boogaloo;
+    font-size: 1.5em;
+    color: white;
+}
+#accept, #or p{
+    color: white;
+}
+form input{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    padding: 8px;
+    width: 25vw;
+}
+input[type="checkbox"]{
+    width: 1em;
+}
+.check label{
+    color: white;
+    text-shadow: 0 0 10px black;
+    -webkit-text-stroke: 1px rgb(235,5,19);
+}
+#or{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#google{
+    background-color:white;
+    border: 2px solid rgb(46, 46, 131);
+}
+#google p{
+    color: rgb(46, 46, 131);
+}
+#Facebook{
+    background-color: blue;
+}
+#Facebook,#Apple p{
+    color: white;
+}
+#Apple{
+    background-color: black;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color:rgb(46, 46, 131);
+}
+#other div:hover{
+    transform: scale(1.1);
+}
+input[type="checkbox"]{
+    width: 15px;
+    border: none;
+}
+#back{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+#back:hover{
+    transform: scale(1.1);
+}
+.fa-arrow-left{
+    font-size: 4em;
+    color: white;
+    -webkit-text-stroke: 1px rgb(46, 46, 131);
+}

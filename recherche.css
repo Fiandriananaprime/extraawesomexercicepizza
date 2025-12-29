@@ -1,0 +1,124 @@
+ body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+main {
+    flex-direction: column;
+        background-image: url(images/tacoshero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        width: 100%;
+        background-position: bottom;
+}
+
+      .research {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        position: absolute;
+        top: 50vh;left: 20vw;
+        padding-left: 1rem;
+        background-color: rgb(235, 5, 19);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+        border: 1px solid transparent;
+        margin-inline: auto;
+        transition: border 0.5s ease-in-out;
+        opacity: 0.8;
+      }
+      .fa-arrow-left{font-size: 3.5em;color: white;-webkit-text-stroke:2px rgb(235, 5, 19);margin: 20px 0 0 20px;}
+      #logo{width:200px; position: absolute;top: 20px; right: 20px;}
+      .fa-arrow-left:hover{
+        transform: scale(1.2);
+      }
+#IA{
+    width:40vw;
+    position: absolute;
+    left:30vw;bottom: 45vh;
+    z-index: 999;
+    display: flex;
+}
+@keyframes IAanimation {
+    from{transform: scale(1);}
+    to{transform: scale(1.02);}
+}
+#IA img{
+    animation: IAanimation 1s alternate infinite;
+    width: 15vw;
+}
+#IA p{
+    padding-top: 40px;
+}
+#IA span{
+    font-family: cursive;
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #fff;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.chat-container {
+  max-width: 400px;
+  margin: 20px;margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chat-bubble span{
+  margin: 0;
+  padding: 0;
+}
+.chat-bubble {
+  max-width:17vw;
+  max-height: 20vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 15px 15px 0 15px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.3s forwards;
+}
+
+.chat-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #f0f0f0;
+  border-bottom: 0;
+  margin-left: -5px;
+  margin-bottom: -10px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#user-input{
+    width: 60vw;
+    padding-left: 20px;
+    background: transparent;
+    height: 10vh;
+    border: none;
+}

@@ -1,0 +1,130 @@
+/* General responsive helpers */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Constrain main content for large screens and add side padding */
+main, .container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Make buttons and touch targets comfortable on mobile */
+button, .elements a, .menu-content a {
+  min-height: 44px;
+}
+
+/* Small adjustments to header/nav for many layouts */
+header nav ul {
+  gap: 0.5rem;
+}
+
+/* Breakpoints */
+@media (max-width: 1024px) {
+  .hero-content {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .menu-content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .item {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  nav button {
+    font-size: 0.95rem;
+    width: auto;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 0.75rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  main {
+    width: 95vw;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    padding: 0.75rem;
+  }
+
+  .menu-content {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .elements img, .item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .column {
+    align-items: center;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: calc(100% - 3rem);
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 0.25rem;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content {
+    height: auto;
+    gap: 1rem;
+  }
+
+  .menu-content, .item {
+    grid-template-columns: 1fr;
+  }
+
+  .column {
+    padding: 0.5rem;
+  }
+}
+
+/* Small utility: prevent horizontal overflow on small devices */
+html, body {
+  overflow-x: hidden;
+}
